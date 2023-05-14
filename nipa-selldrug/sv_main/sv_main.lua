@@ -65,11 +65,3 @@ RegisterNetEvent('nd-selldrug:server:tookmoney', function()
         print('Failed to get player from ID: ' .. source)
     end
 end)
-
-AddEventHandler('onResourceStart', function(resourceName)
-    if (GetCurrentResourceName() == "nipa-selldrug") == false then
-        print('Pidä se nimi siinä missö se olikin....')
-        Wait(3000)
-        os.exit()
-    end
-end)
